@@ -1,0 +1,555 @@
+<!doctype html>
+
+<html>
+
+<head>
+<title> My Portfolio </title>
+<link rel="icon" href="icon.jpg" type="image/gif" sizes="16x16">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+body{
+background-color: #FFFFEF;
+margin: 0px;
+padding: 0px
+}
+
+section{
+width: 100%;
+height:100vh;
+background-image:url("fin1.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+position:relative;
+}
+
+nav{
+display:flex;
+justify-content: space-between;
+align-items: center;
+height: 60px;
+background-color:#B0E0E6;
+box-shadow:2px 2px 12px rgb(176,224,230);
+padding:0px 5%;
+}
+
+nav ul{
+display:flex;
+list-style-type: none;
+}
+
+nav ul li a{
+margin:20px;
+font-size:15px;
+font-weight:700;
+}
+
+<!--
+.logo{
+font-family:Roadtest;
+color:#000000;
+font-size:30px;
+}
+
+.active{
+font-weight:bold;
+color:#00BFFF;
+font-size:50px;
+}
+-->
+
+.text-container p:nth-child(1){
+font-family:Comic Sans MS;
+font-weight:bold;
+font-size: 22px;
+color:#6d6d6d;
+}
+
+.text-container p:nth-child(2){
+font-family:calibri;
+font-weight:bold;
+font-size: 44px;
+color:#1a1a1a;
+}
+
+.text-container p:nth-child(3){
+font-family:Comic Sans MS;
+font-weight:bold;
+font-size: 33px;
+color:#403e3e;
+line-height:30px
+}
+
+.text-container p{
+line-height:0px;
+margin:45px 0px 50px;
+}
+
+.text-container{
+position:absolute;
+left:13%;
+top:42%;
+transform:translate(-13%, -42%);
+}
+
+.text-container button
+{
+width:170px;
+height:25px;
+border-radius:10px;
+font-weight:bold;
+font-size:15px;
+color:#8A2BE2;
+margin:0px 10px 50px;
+}
+
+.hire_btnbtn{
+width:120px;
+height: 40ps;
+color:#FFFFFF;
+font-family:calibri;
+background-color:#FFFFFF;
+}
+
+.cv{
+width:120px;
+height: 40ps;
+color:#FFFFFF;
+font-family:calibri;
+background-color:#262525;
+}
+
+<!--
+button:active:{
+transform:scale(10,10);
+}
+-->
+
+.Avatar{
+height:518px;
+position:absolute;
+bottom:0px;
+left:90.8%;
+transform:translate(-70%);
+}
+
+.about_section{
+width:80%;
+height:300px;
+background-color:#87CEFA ;
+border-radius:10px;
+border-shadow:2px 2px 2px rgb(238,130,238);
+display:flex;
+margin:-2% auto;
+position: relative;
+justify-content: space-evenly;
+align-items: center;
+}
+
+.about_section img{
+height:250px;
+border-radius:10px;
+}
+
+.about_text{
+width: 550px;
+}
+
+.about_text p:nth-child(1){
+font-family:myriad pro;
+font-weight:bold;
+font-size: 22px;
+color:#403e3e;
+}
+
+.about_text p:nth-child(2){
+font-family:myriad pro;
+font-weight:bold;
+font-size: 13px;
+color:#3e3d3d;
+}
+
+.about_text p:nth-child(3){
+font-family:myriad pro;
+sssfont-size: 16px;
+color:#7e7d7d;
+}
+
+.about_text button{
+width:120px;
+height: 40ps;
+color:#FFFFFF;
+font-family:calibri;
+background-color:#262525;
+}
+
+.Service_section{
+height:470px;
+backend-color: #FFFFFF;
+padding: 5% 10%;
+}
+
+.services_text{
+width:500px;
+}
+
+.services_text p:nth-child(1){
+font-family:calibri;
+font-weight:bold;
+font-size: 33px;
+color:#3e3d3d;
+line-height:0px;
+}
+
+.services_text p:nth-child(2){
+font-family:calibri;
+font-size: 27px;
+color:#3e3d3d;
+font-weight:bold;
+line-height:30px;
+}
+
+.services_text p:nth-child(3){
+font-family:calibri;
+font-weight:bold;
+font-size: 22px;
+color:#3e3d3d;
+}
+
+.box_container{
+display:flex;
+justify-content:space-between;
+}
+
+.box1, .box2, .box3, .box4, .box5{
+width:150px;
+height:250px;
+background-repeat:no-repeat;
+background-size:cover;
+box-shadow:2px 2px 2px rgba(0.3,0.3,0.3,0.3);
+display:flex;
+align-items:center;
+justify-content:center;
+flex-direction:column;
+background-image:url("black.jpg");
+}
+
+.box1 span, .box2 span, .box3 span, .box4 span, .box5 span{
+width:30px;
+height:30px;
+border-radius:50px;
+background-color:#00FFFF;
+display:flex;
+justify-content:center;
+align-items:center;
+font-family:calibri;
+font-weight:bold;
+}
+
+.box1 p:nth-child(2),
+.box2 p:nth-child(2),
+.box3 p:nth-child(2),
+.box4 p:nth-child(2),
+.box5 p:nth-child(2){
+color: #FFFFFF;
+font-family:calibri;
+font-size:15px;
+line-height:0px;
+}
+
+.box1 p:nth-child(3),
+.box2 p:nth-child(3),
+.box3 p:nth-child(3),
+.box4 p:nth-child(3),
+.box5 p:nth-child(3){
+color: #8f8f8f;
+font-family:calibri;
+width:100px;
+text-align:center;
+margin:0px 0px 20px 0px;
+}
+
+.box1 button,
+.box2 button,
+.box3 button,
+.box4 button,
+.box5 button{
+width:100px;
+height:20px;
+background-color:#FFFFFF;
+border:none;
+outline:none;
+border-radius:5px;
+align:center;
+bottom:10px;
+}
+
+.contact_me{
+margin-top:30px;
+width: 100%;
+height:280px;
+background-image:url("black.jpg");
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+}
+
+.contact_text p:nth-child(1){
+font-family:calibri;
+font-weight:bold;
+font-size: 33px;
+color:#3e3d3d;
+line-height:0px;
+color:white
+}
+
+.contact_text p:nth-child(2){
+font-family:calibri;
+font-size: 20px;
+color:black;
+font-weight:bold;
+line-height:30px;
+color:white;
+}
+
+.contact_me button{
+font-family:calibri;
+font-weight:bold;
+align-items:center;
+justify-content: center;
+border-radius:5px;
+background-color:#FFFFFF;
+width:100px;
+align:center;
+margin-left:40%;
+}
+
+.footer{
+height:250px;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+position:relative;
+}
+
+.footer p{
+font-family:calibri;
+}
+
+.footer a{
+font-family:calibri;
+}
+
+.footer p:nth-child(1){
+color:#191919;
+font-family:calibri;
+font-weight:bold;
+font-size:30px;
+}
+
+.footer p:nth-child(2){
+font-size:20px;
+color:#7e7d7d;
+font-weight:bold;
+font-family:calibri;
+text-align:center;
+width:600px;
+}
+
+.social_icons{
+display:flex;
+}
+
+.social_icons a{
+width:40px;
+height:40px;
+display:flex,
+justify-content:center;
+align-items: center;
+background-color: #e6e3e3;
+margin: 20px 10px;
+border-radius: 50%;
+}
+
+.social_icons i{
+color:#000000;
+justify-content: center;
+align-items:center;
+}
+
+.social_icons a:hover,
+.a-social_icons a:hover{
+background-color:#000000;
+box-shadow:2px 2px 2px rgba(0,0,0,0.2);
+transition: all ease 0.5s;
+}
+
+.social_icons a:hover i
+.a-social_icons a:hover i{
+color:#FFFFFF;
+transition: all ease 0.5s;
+} 
+
+.a-social_icons{
+position: fixed;
+top: 30%;
+right: 0%;
+}
+
+.a-social_icons a{
+display: flex;
+justify-content:center;
+align-items:center;
+width: 50%;
+height: 50%;
+background-color: #FFFFFF;
+border:2px solid #cbcbcb;
+box-shadow:2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.a-social_icons i{
+color: #2b2b2b;
+font-size:20px;
+justify-content: center;
+align-items: center;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 15px;
+  text-align: center;
+  margin: 2px 2px;
+}
+
+</style>
+</head>
+
+<body>
+
+	<section id="home">
+
+		<nav>
+			<a href="">My Personal Portfolio</a>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about_section">About Me</a></li>
+				<li><a href="#Service_section">Services</a></li>
+				<li><a href="#contact_me">Contact Me</a></li>
+			</ul>
+		</nav>
+		
+		<div class="text-container">
+			<p>Hello</p>
+			<p>I'm SINGAMNENI SAIPAVAN</p>
+			<p>I'm a Backend engineer <br> & a Tester</p>
+			
+			<a href="hireme.html" target="_blank"><button class="hire_btnbtn"> Hire me </button></a>
+			<a href="saipavan_sigamneni_cv.pdf" target="_blank"><button class="cv"> Here is my CV </button></a>
+		</div>
+		
+		<img src = "fin.jpg" class="Avatar" alt="Avatar">
+		
+	</section>
+
+	<div class="about_section" id="about_section">
+		<img src="potrite.png" style="width:200px">
+		
+		<div class="about_text">
+			<p> ABOUT ME </p>
+			<p> Backend Engineer and Tester <br> </p>
+			<p>Python Developer with Integrated PG in Computer Science currently living in Bengaluru / Bangalore. I am working as a Back end developer with python, MongoDB and PostgreSQL, my basic task is to develop API's which front end will integrate for our application. I have an experience with Py-Test Framework for API Automation Testing and Detox Framework for Mobile Application Automation Testing. </p>
+			
+			<a href="hireme.html" target="_blank"><button> Hire Me </button></a>
+			<a href="saipavan_sigamneni_cv.pdf" target="_blank"><button> Here is my CV </button></a>
+		</div>
+		
+	</div>
+	
+	<div class="Service_section" id="Service_section">
+		<div class="services_text">
+			<p> SERVICES </p>
+			<p> I can provide you the bellow services which I have mentioned </p>
+			<p> I support backend developement and backend API testing which is automated, User Interface Design, Manual Testing, Front end Detox fot mobile and Just framework unit testing for front end code as well </p>
+		</div>
+		
+		<div class="box_container">
+		
+			<div class="box1">
+				<span>1</span>
+				<p class="heading"> PYTHON </P>
+				<P class="details_python"> Python is an interpreted, high-level and general-purpose programming language. </p>
+				<a href="https://docs.python.org/3/tutorial/" target="_blank"><button> Read More </button></a>
+			</div>
+			
+			<div class="box2">
+				<span>2</span>
+				<p class="heading"> PYTEST FRAMEWORK </P>
+				<P class="details_python"> Pytest is a testing framework which allows us to write test codes using python. </p>
+				<a href="https://www.guru99.com/pytest-tutorial.html" target="_blank"><button> Read More </button></a>
+			</div>
+			
+			<div class="box3">
+				<span>3</span>
+				<p class="heading"> MONGO DB </P>
+				<P class="details_python"> MongoDB is a cross -platform  document - oriented  database  program data base. </p>
+				<a href="https://www.tutorialspoint.com/mongodb/index.htm" target="_blank"><button> Read More </button></a>
+			</div>
+			
+			<div class="box4">
+				<span>4</span>
+				<p class="heading"> POSTGREE SQL </P>
+				<P class="details_python"> PostgreSQL,known as Postgres, is free and open-source relational database system.</p>
+				<a href="https://www.postgresqltutorial.com/" target="_blank"><button> Read More </button></a>
+			</div>
+			
+			<div class="box5">
+				<span>5</span>
+				<p class="heading"> MANUAL TESTING </P>
+				<P class="details_python"> Manual testing is the process of manually testing software for  defects  finding. </p>
+				<a href="https://www.guru99.com/manual-testing.html" target="_blank"><button> Read More </button></a>
+			</div>
+		</div>
+	</div>
+
+<!--
+	<div class="Technologies">
+		<p> TECHNOLOGIES </p>
+		<p> Technologies I have worked on </p>
+		<p> PYTHON <br> PYTEST FRAMEWROK <br> MONGO DB <br> POSTGREESQL <br> DETOX <br> UNITTESTING </p>
+	</div>
+-->
+
+	<div class="contact_me" id="contact_me">
+		<div class="contact_text">
+			<p> CONTACT ME </p>
+			<p> IF YOU HAVE ANY QUERIES PLS CONTACT. <br> Click the button for details </P>
+			<a href= "Capture.PNG" target="_blank"><button>Click Here</button></a>
+		</div>
+	</div>
+	
+	<footer class="footer">
+		<p> Going to internet </p>
+		<p> Reach me on, If you like </p>
+		<div class="social_icons">
+			<a href="https://www.facebook.com/singamneni.saipavan/" target="_blank"><i class="fa fa-facebook"> </i></a>
+			<a href="https://twitter.com/SSingamneni" target="_blank"><i class="fa fa-twitter"> </i></a>
+			<a href="https://www.instagram.com/saipavan_singamneni/" target="_blank"><i class="fa fa-instagram"> </i></a>
+			<a href="https://www.linkedin.com/in/sai-pavan-singamneni-4790b8128/" target="_blank"><i class="fa fa-linkedin"> </i></a>
+			<a href="https://www.google.com/" target="_blank"><i class="fa fa-google"> </i></a>
+		</div>
+	</footer>
+<!--
+	<div class="a-social_icons">
+		<a href="#"><i class="fa fa-facebook"> </i></a>
+		<a href="#"><i class="fa fa-twitter"> </i></a>
+		<a href="#"><i class="fa fa-instagram"> </i></a>
+		<a href="#"><i class="fa fa-linkedin"> </i></a>
+		<a href="#"><i class="fa fa-google"> </i></a>
+	</div>
+-->
+</body>
+
+</html>
